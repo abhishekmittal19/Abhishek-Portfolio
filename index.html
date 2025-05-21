@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishek | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1>👋 Hi, I'm <span>Abhishek</span></h1>
+      <p>React & JS Developer | Building smart, scalable web solutions.</p>
+      <a href="#projects" class="btn">Explore Projects</a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About -->
+  <section id="about" class="section container fade-in">
+    <h2>About Me</h2>
+    <p>I’m a developer passionate about interactive UI/UX and clean code. I specialize in JavaScript frameworks and building tools that streamline company operations.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section container fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" onclick="openModal('Elvis Portal', `
+        <strong>Duration:</strong> Jan 2024 – Apr 2024<br>
+        <strong>Objective:</strong> Internal management portal for employee efficiency.<br>
+        <strong>Features:</strong> Leave, attendance, project tracking, timesheets, admin view.<br>
+        <strong>Stack:</strong> JavaScript, jQuery, HTML, CSS, Bootstrap, Flask, MySQL.
+      `)">
+        <h3>🧭 Elvis Portal</h3>
+        <p>Internal portal for HR and project management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <section id="skills" class="section container fade-in">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>React.js</li><li>Knockout.js</li><li>JavaScript (ES6+)</li>
+      <li>jQuery</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container fade-in">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 John Doe. Built with ❤️ and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
